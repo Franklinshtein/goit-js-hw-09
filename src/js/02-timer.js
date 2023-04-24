@@ -15,6 +15,8 @@ const refs = {
 
 refs.btnStart.disabled = true;
 
+let selectedTime;
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -55,6 +57,7 @@ function convertMs(ms) {
 }
 
 function addLeadingZero(value) {
+  Number(value);
   return value.toString().padStart(2, '0');
 }
 
